@@ -15,10 +15,11 @@ export default function QueryProcessor(query: string): string {
     return ("28");
   }
   if (query.toLowerCase().includes("multiplied")){
-    var x = query.slice(9, 11);
+    var x = query.slice(8, 10);
     var y = query.slice(25, 27);
     console.log(x);
     console.log(y);
+    return (" " + (parseInt(x) * parseInt(y)));
   }
 
 
