@@ -23,7 +23,7 @@ export default function QueryProcessor(query: string): string {
   }
   if (query.toLowerCase().includes("minus")){
     var x = query.slice(8, 10);
-    var y = query.slice(18, 20);
+    var y = query.slice(17, 19);
     console.log(x);
     console.log(y);
     return (" " + (parseInt(x) - parseInt(y)));
