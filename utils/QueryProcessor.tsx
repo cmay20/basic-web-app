@@ -1,4 +1,5 @@
 export default function QueryProcessor(query: string): string {
+
   if (query.toLowerCase().includes("shakespeare")) {
     return (
       "William Shakespeare (26 April 1564 - 23 April 1616) was an " +
@@ -13,6 +14,14 @@ export default function QueryProcessor(query: string): string {
     query.toLowerCase().includes("21")){
     return ("28");
   }
+  if (query.toLowerCase().includes("multiplied")){
+    var x = query.slice(9, 11);
+    var y = query.slice(25, 27);
+    console.log(x);
+    console.log(y);
+  }
+
+
 
   return "";
 }
